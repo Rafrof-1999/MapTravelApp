@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true}).then(() =>{
 });
 
 app.use("/api/pins", pinRoute);
-app.use("/api/user", userRoute);
+app.use("/api/users", userRoute);
 
-app.listen(8800, () =>{
+app.listen(5500, () =>{
     console.log("Backend Server Running")
 })
