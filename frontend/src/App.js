@@ -85,6 +85,7 @@ function App() {
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsername && handleAddClick}
       >
+        
         {pins.map((p) => (
           <>
             <Marker
